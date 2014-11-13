@@ -1,0 +1,14 @@
+default:
+    paths:
+        features: features
+        bootstrap: %behat.paths.features%/bootstrap
+    extensions:
+        Behat\MinkExtension\Extension:
+            javascript_session: 'selenium2'
+            browser_name: firefox
+            base_url: http://localhost:8082/
+            goutte: ~
+            selenium2:
+                capabilities:
+                    version: ''
+
